@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="app.js" defer></script>
+</head>
+<body>
+  <nav id="sidebar">
+    <ul>
+      <div class="discord">
+        <p>Join our discord server for the files passwords</p>
+        <a href="https://discord.gg/pbp7yrg6FX" target="_blank" rel="noopener noreferrer">Discord</a>
+    </div>
+      <li>
+        <span class="logo">Tear's Officials</span>
+        <button onclick=toggleSidebar() id="toggle-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m313-480 155 156q11 11 11.5 27.5T468-268q-11 11-28 11t-28-11L228-452q-6-6-8.5-13t-2.5-15q0-8 2.5-15t8.5-13l184-184q11-11 27.5-11.5T468-692q11 11 11 28t-11 28L313-480Zm264 0 155 156q11 11 11.5 27.5T732-268q-11 11-28 11t-28-11L492-452q-6-6-8.5-13t-2.5-15q0-8 2.5-15t8.5-13l184-184q11-11 27.5-11.5T732-692q11 11 11 28t-11 28L577-480Z"/></svg>
+        </button>
+      </li>
+      <li>
+        <a href="index.html">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M240-200h120v-200q0-17 11.5-28.5T400-440h160q17 0 28.5 11.5T600-400v200h120v-360L480-740 240-560v360Zm-80 0v-360q0-19 8.5-36t23.5-28l240-180q21-16 48-16t48 16l240 180q15 11 23.5 28t8.5 36v360q0 33-23.5 56.5T720-120H560q-17 0-28.5-11.5T520-160v-200h-80v200q0 17-11.5 28.5T400-120H240q-33 0-56.5-23.5T160-200Zm320-270Z"/></svg>
+          <span>Home</span>
+        </a>
+      </li>
+      <li class="active">
+        <a href="dashboard.html">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M520-640v-160q0-17 11.5-28.5T560-840h240q17 0 28.5 11.5T840-800v160q0 17-11.5 28.5T800-600H560q-17 0-28.5-11.5T520-640ZM120-480v-320q0-17 11.5-28.5T160-840h240q17 0 28.5 11.5T440-800v320q0 17-11.5 28.5T400-440H160q-17 0-28.5-11.5T120-480Zm400 320v-320q0-17 11.5-28.5T560-520h240q17 0 28.5 11.5T840-480v320q0 17-11.5 28.5T800-120H560q-17 0-28.5-11.5T520-160Zm-400 0v-160q0-17 11.5-28.5T160-360h240q17 0 28.5 11.5T440-320v160q0 17-11.5 28.5T400-120H160q-17 0-28.5-11.5T120-160Zm80-360h160v-240H200v240Zm400 320h160v-240H600v240Zm0-480h160v-80H600v80ZM200-200h160v-80H200v80Zm160-320Zm240-160Zm0 240ZM360-280Z"/></svg>
+          <span>Free Products</span>
+        </a>
+      </li>
+      <li>
+        <button onclick=toggleSubMenu(this) class="dropdown-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m221-313 142-142q12-12 28-11.5t28 12.5q11 12 11 28t-11 28L250-228q-12 12-28 12t-28-12l-86-86q-11-11-11-28t11-28q11-11 28-11t28 11l57 57Zm0-320 142-142q12-12 28-11.5t28 12.5q11 12 11 28t-11 28L250-548q-12 12-28 12t-28-12l-86-86q-11-11-11-28t11-28q11-11 28-11t28 11l57 57Zm339 353q-17 0-28.5-11.5T520-320q0-17 11.5-28.5T560-360h280q17 0 28.5 11.5T880-320q0 17-11.5 28.5T840-280H560Zm0-320q-17 0-28.5-11.5T520-640q0-17 11.5-28.5T560-680h280q17 0 28.5 11.5T880-640q0 17-11.5 28.5T840-600H560Z"/></svg>
+          <span>Free Cheats</span>
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-361q-8 0-15-2.5t-13-8.5L268-556q-11-11-11-28t11-28q11-11 28-11t28 11l156 156 156-156q11-11 28-11t28 11q11 11 11 28t-11 28L508-372q-6 6-13 8.5t-15 2.5Z"/></svg>
+        </button>
+        <ul class="sub-menu">
+          <div>
+            <li><a href="https://insolence.online" target="_blank" rel="noopener noreferrer">insolence.online</a></li>
+            <li><a href="https://www.staffbesting.store/shop/free/" target="_blank" rel="noopener noreferrer">staffbesting.store</a></li>
+          </div>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  <main>
+    <div class="container">
+      <img src="dashboard/SpoofingPack2025.png" alt="Description of the image">
+      <div class="container-content">
+        <h2>Spoofing Pack 2025</h2>
+        <h3>WORKING</h3>
+        <p>Make sure to Download AIO first to run UCSpoofer. Then, open UCSpoofer, click "Refresh," check the "Advanced Clean" box, and hit "Spoof." Reinstall Windows, flash your BIOS, and change your disk ID by running the necessary CMD commands in disk.txt. Download TMAC to change your MAC address, install WARP, and finally, download Valorant. Make sure to use WARP while playing to stay away from delay bans.</p>
+        <a href="downloads/Spoofing Pack 2025.rar">Direct Download</a>
+      </div>
+    </div>
+    <div class="container">
+      <img src="dashboard/SkinChanger.png" alt="Description of the image">
+      <div class="container-content">
+        <h2>Valorant Skin Changer</h2>
+        <h4>USE AT OWN RISK</h3>
+        <p>There is not much to tell, after you have injected the Free Valorant SkinChanger DLL, all skins will be unlocked and you can play with them. (Client-Sided! Only you can see the skin!) Take care of yourselves.</p>
+        <a href="downloads/Skin Changer.rar">Direct Download</a>
+      </div>
+    </div> 
+    <div class="container">
+      <img src="dashboard/9xWare.png" alt="Description of the image">
+      <div class="container-content">
+        <h2>Lphyric Private & x9Ware</h2>
+        <h5>NOT TESTED (RISK)</h5>
+        <p>I haven’t tested the cheat myself, but it features two cheat menus and a skin changer. I’m also unsure whether it requires HVCI to be turned on or off. Be sure to download the AIO to ensure everything runs smoothly.</p>
+        <a href="downloads/Lphyric Private + X9Ware Slotted.rar">Direct Download</a>
+      </div>
+    </div> 
+    <div class="container">
+      <video width="100%" height="auto" controls>
+        <source src="dashboard/FoxV3.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="container-content">
+        <h2>FoxV3 Vanguard Bypass</h2>
+        <h6>CRACKED</h6>
+        <p>"FoxV3 is a vanguard bypass that may be patched in the upcoming patch notes. This version is cracked, as the original software was a paid product."</p>
+        <a href="downloads/FOXV3.rar">Direct Download</a>
+      </div>
+    </div>
+     
+    <div class="container">
+      <img src="dashboard/triggerbot.png" alt="Description of the image">
+      <div class="container-content">
+        <h2>Valorant TriggerBot</h2>
+        <h4>USE AT OWN RISK</h3>
+        <p>Valorant Settings
+          Here are the settings you need to make in the game for Triggerbot to work properly:
+          General > Enemy Highlight Color: Select Purple.
+          General > Pure Input : Set to Off.
+          These settings are the default and recommended settings.
+          Resolution: 1920x1080 (If your in-game resolution is different, change this)
+          Trigger Key: Left Shift
+          Trigger Delay: 50ms
+          Trigger Area: 5.0
+          Target Color: Purple (RGB: 250, 100, 250)
+          Color Tolerance: 70
+          Run the exe file and click the "Enable" button to enable triggerbot.</p>
+        <a href="downloads/Valorant Trigger Bot.rar">Direct Download</a>
+      </div>
+    </div> 
+    <div class="container">
+      <img src="dashboard/bdevspoofer.png" alt="Description of the image">
+      <div class="container-content">
+        <h2>Bdevs Valorant Spoofer</h2>
+        <h6>CRACKED</h6>
+        <p>Hello, I received this BDevs Free Valorant Spoofer on February 1, 2025, I have tested it on four different devices. Unfortunately, it didn’t work on three of them, and users got banned after a short time. However, it did work on one device. It seems like its effectiveness is purely luck-based. Scofield, If it doesn’t work, you should look for another Free Valorant Cheat Spoofer yourself or buy</p>
+        <a href="downloads/BDevsHwidSpoofer.rar">Direct Download</a>
+      </div>
+    </div> 
+  </main>
+</body>
+</html>
